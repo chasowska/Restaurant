@@ -22,6 +22,13 @@ a {
     cursor: pointer;
 }
 
+.sr-only {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: none;
+}
+
 header {
     position: sticky;
     top: 0;
@@ -220,3 +227,125 @@ header {
     width: 7%;
     border-radius: 45px
 }
+
+.reservation-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.reservation-section h2 {
+    width: fit-content;
+}
+
+.reservation-section > div {
+    width: 500px;
+}
+
+.reservation-map {
+    height: 656px;
+    margin: auto;
+    max-width: 350px;
+    border: 1px white solid;
+    position: relative;
+}
+
+.tables {
+    background-color: lightgrey;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #19181D;
+}
+
+.round-tables {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.round-tables-1 {
+    top: 197px;
+    right: 124px;
+}
+
+.round-tables-2 {
+    top: 347px;
+    right: 124px;
+}
+
+.large-tables {
+    width: 120px;
+    height: 60px;
+    border-radius: 16px;
+}
+
+.large-tables-1 {
+    top: 58px;
+    right: 190px;
+}
+
+.large-tables-2 {
+    top: 58px;
+    right: 31px;
+}
+
+.large-tables-3 {
+    top: 526px;
+    right: 190px;
+}
+
+.large-tables-4 {
+    top: 526px;
+    right: 31px;
+}
+
+.small-tables {
+    width: 50px;
+    height: 65px;
+    border-radius: 10px;
+}
+
+.small-tables-1 {
+    top: 173px;
+    right: 287px;
+}
+
+.small-tables-2 {
+    top: 291px;
+    right: 287px;
+}
+
+.small-tables-3 {
+    top: 410px;
+    right: 287px;
+}
+
+.small-tables-4 {
+    top: 173px;
+    right: 12px;
+}
+
+.small-tables-5 {
+    top: 291px;
+    right: 12px;
+}
+
+.small-tables-6 {
+    top: 410px;
+    right: 12px;
+}
+
+.reservation-map label:hover {
+    background-color: white;
+}
+
+.reservation-map input:checked + label {
+    background-color: #efa500;
+    color: white;
+}
+
