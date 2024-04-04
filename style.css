@@ -203,7 +203,7 @@ header {
 }
 
 .visit-section {
-    background: linear-gradient(180deg, rgba(25, 24, 29, 1) 5%, rgba(25, 24, 29, 0.6054796918767507) 50%, rgba(25, 24, 29, 1) 95%), url(images/back.jpg) center / cover no-repeat border-box, #3f3f3f;;
+    background: linear-gradient(180deg, rgba(25, 24, 29, 1) 5%, rgba(25, 24, 29, 0.6054796918767507) 50%, rgba(25, 24, 29, 1) 95%), url(images/back.jpg) center / cover no-repeat fixed, #3f3f3f;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -227,6 +227,94 @@ header {
     width: 7%;
     border-radius: 45px
 }
+
+.about-restaurant {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 2rem;
+}
+
+.about-restaurant img {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.about-restaurant h2 {
+    text-align: center;
+}
+
+.about-restaurant p {
+    padding-top: 2rem;
+}
+
+@media (min-width: 780px) {
+    .about-restaurant {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-restaurant-info {
+        max-width: 31rem;
+    }
+
+    .about-restaurant img {
+        width: 40%;
+        padding-right: 3rem;
+        height: 100%;
+    }
+
+    .about-restaurant h2 {
+        text-align: left;
+    }
+}
+
+.achievements {
+    background: linear-gradient(180deg, rgba(25, 24, 29, 1) 3%, rgba(25, 24, 29, 0.6054796918767507) 50%, rgba(25, 24, 29, 1) 97%), url(images/restaurant-2.webp) center / cover no-repeat fixed, #3f3f3f;
+}
+
+.achievement {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.achievement svg {
+    margin-bottom: 0.5rem;
+    z-index: 1;
+}
+
+.achievement h3 {
+    text-transform: uppercase;
+}
+
+.blur {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    filter: blur(1.5rem);
+    position: absolute;
+    top: 13px;
+}
+
+@media (min-width: 780px) {
+    .achievements {
+        display: flex;
+        justify-content: center;
+        padding: 300px 0;
+    }
+
+    .achievement {
+        margin: 0;
+        padding: 0 10px;
+    }
+}
+
 
 .reservation-section {
     display: flex;
