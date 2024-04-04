@@ -32,6 +32,7 @@ a {
 header {
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .header {
@@ -315,17 +316,20 @@ header {
     }
 }
 
-
 .reservation-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin: 7rem 0 9rem 0;
     flex-direction: column;
 }
 
 .reservation-section h2 {
     width: fit-content;
+    font-family: 'Bevan', sans-serif;
+    font-size: 7vw;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
 }
 
 .reservation-section > div {
@@ -336,18 +340,18 @@ header {
     height: 656px;
     margin: auto;
     max-width: 350px;
-    border: 1px white solid;
+    box-shadow: 0 0 20px 16px black;
     position: relative;
 }
 
 .tables {
-    background-color: lightgrey;
+    background-color: black;
     display: flex;
     cursor: pointer;
     justify-content: center;
     align-items: center;
     position: absolute;
-    color: #19181D;
+    box-shadow: 0 0 7px 0 #ffffff5c;
 }
 
 .round-tables {
@@ -429,11 +433,75 @@ header {
 }
 
 .reservation-map label:hover {
-    background-color: white;
+    background-color: #252525;
+    box-shadow: 0 0 7px 0 #ffffff;
 }
 
 .reservation-map input:checked + label {
-    background-color: #efa500;
-    color: white;
+    background-color: #d46700;
+    color: black;
+    box-shadow: 0 0 20px 6px #000000;
 }
 
+
+.reservation-info {
+    display: none;
+    position: absolute;
+    top: 703px;
+    right: 32px;
+    width: 300px;
+    text-align: center;
+}
+
+
+.reservation-map input:first-child[type="radio"]:checked ~ .reservation-checked-1 {
+    display: block;
+}
+
+.reservation-map input:nth-child(3)[type="radio"]:checked ~ .reservation-checked-2 {
+    display: block;
+}
+
+.reservation-map input:nth-child(5)[type="radio"]:checked ~ .reservation-checked-3 {
+    display: block;
+}
+
+.reservation-map input:nth-child(7)[type="radio"]:checked ~ .reservation-checked-4 {
+    display: block;
+}
+
+.reservation-map input:nth-child(9)[type="radio"]:checked ~ .reservation-checked-5 {
+    display: block;
+}
+
+.reservation-map input:nth-child(11)[type="radio"]:checked ~ .reservation-checked-6 {
+    display: block;
+}
+
+.reservation-map input:nth-child(13)[type="radio"]:checked ~ .reservation-checked-7 {
+    display: block;
+}
+
+.reservation-map input:nth-child(15)[type="radio"]:checked ~ .reservation-checked-8 {
+    display: block;
+}
+
+.reservation-map input:nth-child(17)[type="radio"]:checked ~ .reservation-checked-9 {
+    display: block;
+}
+
+.reservation-map input:nth-child(19)[type="radio"]:checked ~ .reservation-checked-10 {
+    display: block;
+}
+
+.reservation-map input:nth-child(21)[type="radio"]:checked ~ .reservation-checked-11 {
+    display: block;
+}
+
+.reservation-map input:nth-child(23)[type="radio"]:checked ~ .reservation-checked-12 {
+    display: block;
+}
+
+.reservation-map input:focus-visible {
+    outline: blue;
+}
