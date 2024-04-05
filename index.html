@@ -144,46 +144,83 @@
     </section>
     <section class="reservation-section">
         <h2>Make a reservation</h2>
-        <div>
-            <div class="reservation-map">
-                <input class="sr-only" type="radio" name="tables" id="1">
-                <label tabindex="0" class="tables round-tables round-tables-1" for="1">1</label>
-                <input class="sr-only" type="radio" name="tables" id="2">
-                <label tabindex="0" class="tables round-tables round-tables-2" for="2">2</label>
-                <input class="sr-only" type="radio" name="tables" id="3">
-                <label tabindex="0" class="tables large-tables large-tables-1" for="3">3</label>
-                <input class="sr-only" type="radio" name="tables" id="4">
-                <label tabindex="0" class="tables large-tables large-tables-2" for="4">4</label>
-                <input class="sr-only" type="radio" name="tables" id="5">
-                <label tabindex="0" class="tables small-tables small-tables-1" for="5">5</label>
-                <input class="sr-only" type="radio" name="tables" id="6">
-                <label tabindex="0" class="tables small-tables small-tables-2"
-                       for="6">6</label>
-                <input class="sr-only" type="radio" name="tables" id="7">
-                <label tabindex="0" class="tables small-tables small-tables-3" for="7">7</label>
-                <input class="sr-only" type="radio" name="tables" id="8">
-                <label tabindex="0" class="tables small-tables small-tables-4" for="8">8</label>
-                <input class="sr-only" type="radio" name="tables" id="9">
-                <label tabindex="0" class="tables small-tables small-tables-5" for="9">9</label>
-                <input class="sr-only" type="radio" name="tables" id="10">
-                <label tabindex="0" class="tables small-tables small-tables-6" for="10">10</label>
-                <input class="sr-only" type="radio" name="tables" id="11">
-                <label tabindex="0" class="tables large-tables large-tables-3" for="11">11</label>
-                <input class="sr-only" type="radio" name="tables" id="12">
-                <label tabindex="0" class="tables large-tables large-tables-4" for="12">12</label>
-                <span class="reservation-info reservation-checked-1">You have chosen table №1.<br>It has 6 seating places.<br>The table is located in the center of the hall.</span>
-                <span class="reservation-info reservation-checked-2">You have chosen table №2.<br>It has 6 seating places.<br>The table is located in the center of the hall.</span>
-                <span class="reservation-info reservation-checked-3">You have chosen table №3.<br>It has 6 seating places.<br>The table is located near the balcony.</span>
-                <span class="reservation-info reservation-checked-4">You have chosen table №4.<br>It has 6 seating places.<br>The table is located near the balcony.</span>
-                <span class="reservation-info reservation-checked-5">You have chosen table №5.<br>It has 3 seating places.<br>The table is located by the window.</span>
-                <span class="reservation-info reservation-checked-6">You have chosen table №6.<br>It has 3 seating places.<br>The table is located by the window.</span>
-                <span class="reservation-info reservation-checked-7">You have chosen table №7.<br>It has 3 seating places.<br>The table is located by the window.</span>
-                <span class="reservation-info reservation-checked-8">You have chosen table №8.<br>It has 3 seating places.<br>The table is located by the window.</span>
-                <span class="reservation-info reservation-checked-9">You have chosen table №9.<br>It has 3 seating places.<br>The table is located by the window.</span>
-                <span class="reservation-info reservation-checked-10">You have chosen table №10.<br>It has 3 seating places.<br>The table is located by the window.</span>
-                <span class="reservation-info reservation-checked-11">You have chosen table №11.<br>It has 6 seating places.<br>The table is located near the musicians.</span>
-                <span class="reservation-info reservation-checked-12">You have chosen table №12.<br>It has 6 seating places.<br>The table is located near the musicians.</span>
+        <div class="reservation-container">
+            <div class="reservation-map-container">
+                <div class="reservation-map">
+                    <input class="sr-only" type="radio" name="tables" id="1">
+                    <label tabindex="0" class="tables round-tables round-tables-1" for="1">1</label>
+                    <img class="table-photos table-photo-1" src="images/table-1.jpg" alt="table 1">
 
+                    <input class="sr-only" type="radio" name="tables" id="2">
+                    <label tabindex="0" class="tables round-tables round-tables-2" for="2">2</label>
+                    <img class="table-photos table-photo-2" src="images/table-2.png" alt="table 2">
+
+                    <input class="sr-only" type="radio" name="tables" id="3">
+                    <label tabindex="0" class="tables large-tables large-tables-1" for="3">3</label>
+                    <img class="table-photos table-photo-3" src="images/table-3.png" alt="table 3">
+
+                    <input class="sr-only" type="radio" name="tables" id="4">
+                    <label tabindex="0" class="tables large-tables large-tables-2" for="4">4</label>
+                    <img class="table-photos table-photo-4" src="images/table-4.png" alt="table 4">
+
+                    <input class="sr-only" type="radio" name="tables" id="5">
+                    <label tabindex="0" class="tables small-tables small-tables-1" for="5">5</label>
+                    <img class="table-photos table-photo-5" src="images/table-5.png" alt="table 5">
+
+                    <input class="sr-only" type="radio" name="tables" id="6">
+                    <label tabindex="0" class="tables small-tables small-tables-2" for="6">6</label>
+                    <img class="table-photos table-photo-6" src="images/table-5.png" alt="table 6">
+
+                    <input class="sr-only" type="radio" name="tables" id="7">
+                    <label tabindex="0" class="tables small-tables small-tables-3" for="7">7</label>
+                    <img class="table-photos table-photo-7" src="images/table-5.png" alt="table 7">
+
+                    <input class="sr-only" type="radio" name="tables" id="8">
+                    <label tabindex="0" class="tables small-tables small-tables-4" for="8">8</label>
+                    <img class="table-photos table-photo-8" src="images/table-6.png" alt="table 8">
+
+                    <input class="sr-only" type="radio" name="tables" id="9">
+                    <label tabindex="0" class="tables small-tables small-tables-5" for="9">9</label>
+                    <img class="table-photos table-photo-9" src="images/table-6.png" alt="table 9">
+
+                    <input class="sr-only" type="radio" name="tables" id="10">
+                    <label tabindex="0" class="tables small-tables small-tables-6"
+                           for="10">10</label>
+                    <img class="table-photos table-photo-10" src="images/table-6.png"
+                         alt="table 10">
+
+                    <input class="sr-only" type="radio" name="tables" id="11">
+                    <label tabindex="0" class="tables large-tables large-tables-3"
+                           for="11">11</label>
+                    <img class="table-photos table-photo-11" src="images/table-11.png"
+                         alt="table 11">
+
+                    <input class="sr-only" type="radio" name="tables" id="12">
+                    <label tabindex="0" class="tables large-tables large-tables-4"
+                           for="12">12</label>
+                    <img class="table-photos table-photo-12" src="images/table-12.png"
+                         alt="table 12">
+
+                    <span class="reservation-info reservation-checked-1">You have chosen table №1.<br>It has 6 seating places.<br>The table is located in the center of the hall.</span>
+                    <span class="reservation-info reservation-checked-2">You have chosen table №2.<br>It has 6 seating places.<br>The table is located in the center of the hall.</span>
+                    <span class="reservation-info reservation-checked-3">You have chosen table №3.<br>It has 6 seating places.<br>The table is located near the balcony.</span>
+                    <span class="reservation-info reservation-checked-4">You have chosen table №4.<br>It has 6 seating places.<br>The table is located near the balcony.</span>
+                    <span class="reservation-info reservation-checked-5">You have chosen table №5.<br>It has 3 seating places.<br>The table is located by the window.</span>
+                    <span class="reservation-info reservation-checked-6">You have chosen table №6.<br>It has 3 seating places.<br>The table is located by the window.</span>
+                    <span class="reservation-info reservation-checked-7">You have chosen table №7.<br>It has 3 seating places.<br>The table is located by the window.</span>
+                    <span class="reservation-info reservation-checked-8">You have chosen table №8.<br>It has 3 seating places.<br>The table is located by the window.</span>
+                    <span class="reservation-info reservation-checked-9">You have chosen table №9.<br>It has 3 seating places.<br>The table is located by the window.</span>
+                    <span class="reservation-info reservation-checked-10">You have chosen table №10.<br>It has 3 seating places.<br>The table is located by the window.</span>
+                    <span class="reservation-info reservation-checked-11">You have chosen table №11.<br>It has 6 seating places.<br>The table is located near the musicians.</span>
+                    <span class="reservation-info reservation-checked-12">You have chosen table №12.<br>It has 6 seating places.<br>The table is located near the musicians.</span>
+                </div>
+            </div>
+            <div class="reservation-photo">
+                <div class="table-photo-0">
+                    <img class="table-photo" src="images/table-0.webp" alt="table">
+                    <div class="gradient-overlay"></div>
+                    <span class="table-photo-0-text">Choose the table that you prefer</span>
+                </div>
             </div>
         </div>
     </section>
