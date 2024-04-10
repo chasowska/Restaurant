@@ -223,6 +223,68 @@
                 </div>
             </div>
         </div>
+        <form class="reservation-form">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone number">
+            </div>
+            <div class="form-date-time">
+                <div>
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-time">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time">
+                </div>
+                <div>
+                    <label for="guests">Guests</label>
+                    <select id="guests" name="guests">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="comment">Comment</label>
+                <input type="text" id="comment" name="comment">
+            </div>
+            <div class="reservation-policy">
+                <h3>Reservation Policy</h3>
+                <p>Please read the reservation policy carefully. We can guarantee your reservation
+                    subject to the following terms and conditions:</p>
+                <ul>
+                    <li>arriving 15+ minutes late without warning will cancel your reservation</li>
+                    <li>the table is reserved for 2 hours</li>
+                    <li>there are no parking spaces near the restaurant, so please plan your route
+                        in advance
+                    </li>
+                    <li>for changes or cancellation of the reservation, we will be grateful if you
+                        call us
+                    </li>
+                    <li>we accept orders for food and drinks until 9:00 p.m</li>
+                </ul>
+                <div class="agree-rules">
+                    <input type="checkbox" id="agree" name="agree rules">
+                    <label for="agree">I agree to the reservation policy</label>
+                </div>
+                <div class="reserve-button-container">
+                    <a href="#" class="reserve-button">RESERVE</a>
+                </div>
+            </div>
+        </form>
     </section>
     <section class="menu-section">
         <h2 class="menu-title">Menu</h2>
