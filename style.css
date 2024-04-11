@@ -736,3 +736,86 @@ header {
         padding: 1rem 0;
     }
 }
+
+.delivery-section {
+
+}
+
+.delivery-container {
+    margin: 2rem;
+    position: relative;
+}
+
+.delivery-container h2 {
+    width: fit-content;
+    font-family: 'Bevan', sans-serif;
+    font-size: 7vw;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+}
+
+.delivery-container img {
+    width: 100%;
+}
+
+.delivery-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delivery-container a {
+    max-width: 200px;
+    border-radius: 0.5rem;
+    color: #d46700;
+    background-color: white;
+    padding: 7px 50px;
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.delivery-container a:hover {
+    color: white;
+    background-color: #d46700;
+}
+
+@media (min-width: 780px) {
+    .delivery-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0;
+    }
+
+    .delivery-container {
+        display: flex;
+        max-width: 1200px;
+    }
+
+    .delivery-text {
+        flex-basis: 200px;
+        flex-grow: 2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .delivery-container h2 {
+        font-size: 3rem;
+    }
+
+    .delivery-img {
+        flex-basis: 400px;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .delivery-img img {
+        max-width: 500px;
+    }
+
+    .delivery-img a {
+        margin: 0;
+    }
+}
